@@ -9,6 +9,7 @@ Aplicação simples em Java para praticar conceitos de:
 - Programação Orientada a Objetos (POO)
 - Classes e métodos
 - Encapsulamento
+- Interfaces
 - Atributos e comportamentos
 
 ## 🛠 Tecnologias utilizadas

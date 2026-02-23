@@ -7,15 +7,15 @@ public class Audio {
     private int classificacao;
 
     public void exibirFicha(){
-        System.out.println("Noma da música: " + titulo);
+        System.out.println("Nome da música: " + getTitulo());
     }
 
-    public int curtir(int curtida){
-        return this.totalCurtidas += curtida;
+    public int curtir(){
+        return this.totalCurtidas++;
     }
 
-    public int reproduzir(int play){
-        return totalReproducoes += play;
+    public int reproduzir(){
+        return totalReproducoes++;
     }
 
     public String getTitulo() {
@@ -30,17 +30,10 @@ public class Audio {
         return totalReproducoes;
     }
 
-    public void setTotalReproducoes(int totalReproducoes) {
-        this.totalReproducoes = totalReproducoes;
-    }
-
     public int getTotalCurtidas() {
         return totalCurtidas;
     }
 
-    public void setTotalCurtidas(int totalCurtidas) {
-        this.totalCurtidas = totalCurtidas;
-    }
 
     public int getClassificacao() {
         return classificacao;
@@ -49,4 +42,5 @@ public class Audio {
     public void setClassificacao(int classificacao) {
         this.classificacao = classificacao;
     }
+
 }

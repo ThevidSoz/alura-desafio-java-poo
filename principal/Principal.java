@@ -1,17 +1,33 @@
 package br.com.alura.minhasmusicas.principal;
 import br.com.alura.minhasmusicas.modelos.Audio;
+import br.com.alura.minhasmusicas.modelos.Musica;
+import br.com.alura.minhasmusicas.modelos.Podcast;
 
 public class Principal {
     static void main(String[] args) {
-        Audio audio = new Audio();
+        // Atributos
+        Musica luzDourada = new Musica();
+        luzDourada.setTitulo("Luz Dourada");
+        luzDourada.setArtista("Alucard");
+        luzDourada.setAlbum("Solar");
+        luzDourada.setGenero("R&B");
+        luzDourada.setClassificacao(10);
+        // Metodos
+        luzDourada.curtir();
+        luzDourada.reproduzir();
+        luzDourada.reproduzir();
+        luzDourada.exibirFicha();
+        System.out.println("-------------");
+        System.out.println("Curtidas: " + luzDourada.getTotalCurtidas());
+        System.out.println("Total de reproduções: " + luzDourada.getTotalReproducoes());
+        System.out.println("Classificação: " + luzDourada.getClassificacao());
+        System.out.println("=============");
 
-        audio.setTitulo("Luz Dourada");
-        audio.setClassificacao(10);
-        audio.curtir(100);
-        audio.reproduzir(100);
+        Podcast chorumeTech = new Podcast();
+        chorumeTech.setTitulo("Chorume Tech");
+        chorumeTech.setAutor("Mano Deyvin");
+        chorumeTech.setDescricao("Podcast chorume sobre o mundo de tecnologia.");
 
-        audio.exibirFicha();
-        System.out.println("Total de curtidas: " + audio.getTotalCurtidas());
-        System.out.println("Total de reproduções: " + audio.getTotalReproducoes());
+        chorumeTech.exibirFicha();
     }
 }
